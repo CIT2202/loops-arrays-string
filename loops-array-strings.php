@@ -13,10 +13,9 @@ a) Modify the following code so that the loop outputs the numbers 5-15
 b) Re-write the loop as a while loop
 */
 
-while($i<=10)
+for($i=5;$i<=10;$i++)
 {
     echo "{$i}<br>";
-    $i++;
 }
 
 

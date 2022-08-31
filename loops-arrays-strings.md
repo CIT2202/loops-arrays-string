@@ -68,7 +68,7 @@ The *print_r()* function is really useful when debugging arrays (*var_dump()* is
 
 ```php
 <?php
-$shopping=["tea","bread","milk","sugar"];
+$shopping = ["tea","bread","milk","sugar"];
 print_r($shopping); //Array ( [0] => tea [1] => bread [2] => milk [3] => sugar )
 ?>
 ```
@@ -81,7 +81,7 @@ We can think of the array as being a list of data
 
 ```php
 <?php
-$shopping=["tea","bread","milk","sugar"];
+$shopping = ["tea","bread","milk","sugar"];
 ?>
 ```
 
@@ -101,20 +101,20 @@ echo $shopping[2]; //milk
 We can add new items by specifying an index number
 ```php
 <?php
-$shopping[5]="butter"; //adds a new item
+$shopping[5] = "butter"; //adds a new item
 ?>
 ```
-If we don’t specify an index the new data is simply added to the end of the array
+If we don't specify an index the new data is simply added to the end of the array
 ```php
 <?php
-$shopping[]="biscuits"; //add a new item
+$shopping[] = "biscuits"; //add a new item
 ?>
 ```
 We can display elements in an array using their index numbers.
 
 ```php
 <?php
-echo "Do you like {$shopping[2]} in your {$shopping[0]}?";
+echo "Do you like {$shopping[2]} in your {$shopping[0]}?"; // do you like milk in your tea
 ?>
 ```
 
@@ -123,7 +123,7 @@ Often a loop is used to efficiently display the contents of an array
 
 ```php
 <?php
-$shopping=["tea","bread","milk","sugar"];
+$shopping = ["tea","bread","milk","sugar"];
 
 for($i=0;$i<count($shopping);$i++){
     echo "{$shopping[$i]}<br>"; //outputs tea bread milk sugar with each cycle of the loop
@@ -135,7 +135,7 @@ for($i=0;$i<count($shopping);$i++){
 ### The foreach loop
 ```php
 <?php
-$shopping=["tea","bread","milk","sugar"];
+$shopping = ["tea","bread","milk","sugar"];
 
 foreach($shopping as $shopItem)
 {
@@ -146,19 +146,19 @@ foreach($shopping as $shopItem)
 The *foreach* loop provides an easy way to loop over the contents of an array.
 
 ### Associative arrays
-Associative array elements aren’t numbered, instead they are labelled. The label is known as a key.
+Associative array elements aren't numbered, instead they are labelled. The label is known as a key.
 
 To create an associative array:
 
 ```php
 <?php
-$nameOfArray=["key"=>"value", "key"=>"value", "key"=>"value"];
+$nameOfArray = ["key"=>"value", "key"=>"value", "key"=>"value"];
 ?>
 ```
 Here's a specific example:
 ```php
 <?php
-$film=["title"=>"Jaws", "year"=>"1975", "duration"=>124];
+$film = ["title"=>"Jaws", "year"=>"1975", "duration"=>124];
 ?>
 ```
 
@@ -171,9 +171,9 @@ $film=["title"=>"Jaws", "year"=>"1975", "duration"=>124];
 We access elements using the key instead of an index number.
 ```php
 <?php
-$film=["title"=>"Jaws", "year"=>"1975", "duration"=>124];
+$film = ["title"=>"Jaws", "year"=>"1975", "duration"=>124];
 echo "<p>The film {$film['title']} was released in {$film['year']}</p>"; // outputs The film Jaws was released in 1975
-$film["certificate"]="15"; // adds a new certificate element
+$film["certificate"] = "15"; // adds a new certificate element
 ?>
 ```
 
@@ -181,7 +181,7 @@ $film["certificate"]="15"; // adds a new certificate element
 * Arrays can store many different data types, including other arrays
 ```php
 <?php
-$countries=[
+$countries = [
     ["name"=>"Germany", "capital"=>"Berlin", "population"=>81000000],
     ["name"=>"France", "capital"=>"Paris", "population"=>66000000],
     ["name"=>"Italy", "capital"=>"Rome", "population"=>60000000]
@@ -233,7 +233,7 @@ We would get something like the following (if we add some CSS)
 |Italy|60000000|
 
 ### Databases and associative arrays
-The above example of multi-dimensional arrays is an important one to understand. When we retrieve data from a database using PHP, we will receive this data in the form of a multi-dimensional array, with data from each row of the database table stored in a separate associative array.
+The above example of multi-dimensional arrays is an important one to understand. When we retrieve data from a database using PHP, we will receive this data in the form of a multi-dimensional array, with data from each row of the database table stored as a separate associative array.
 
 ### Array functions
 There are lots of functions that can help us work with arrays e.g. are some examples:
@@ -248,7 +248,7 @@ The function *in_array()* tells us whether an item can be found in an array
 
 ```php
 <?php
-$shopping=array("tea","bread","milk","sugar");
+$shopping = array("tea","bread","milk","sugar");
 if(in_array("bread", $shopping))
 {
     echo "There's bread on the shopping list";
@@ -260,13 +260,13 @@ The function *array_push()* adds an item to an array
 
 ```php
 <?php
-$countries=[
+$countries = [
     ["name"=>"Germany", "capital"=>"Berlin", "population"=>81000000],
     ["name"=>"France", "capital"=>"Paris", "population"=>66000000],
     ["name"=>"Italy", "capital"=>"Rome", "population"=>60000000]
 ];
 
-$countriesVisited=[];
+$countriesVisited = [];
 foreach($countries as $country)
 {
     if($country["name"]==="France" || $country["name"]==="Italy")
@@ -283,13 +283,12 @@ PHP string work a bit like arrays, starting at zero each character in the string
 
 ```php
 <?php
-$modStr="CIT2220 Web Development";
+$modStr = "CIT2220 Web Development";
 echo "<p>The first character is {$modStr[0]}</p>"; //The first character is C
 echo "<p>The tenth character is {$modStr[9]}</p>"; //The tenth character is e
 ?>
 ```
-PHP features lots of useful string functions
-Again see php.net for complete info. Here are some examples:
+PHP features lots of useful string functions. Again see php.net for complete info. Here are some examples:
 * *strnlen()* Tells us the number of characters in a string
 * *str_word_count()* Tells us the number of words in a string
 * *substr()* Cuts out part of a string
@@ -300,10 +299,10 @@ This example use the *str_replace()* function to search through a string and the
 
 ```php
 <?php
-$modStr="CIT2202 Web Development";
-$msg="CII2345 DISP is my favourite module";
+$modStr = "CIT2202 Web Development";
+$msg = "CII2345 DISP is my favourite module";
 echo "<p>{$msg}</p>"; //CII2345 DISP is my favourite module
-$msg=str_replace("CII2345 DISP",$modStr,$msg);
-echo "<p>{$msg}</p>"; //CIT2318 Web Design and Programming is my favourite module
+$msg = str_replace("CII2345 DISP",$modStr,$msg);
+echo "<p>{$msg}</p>"; //CIT2202 Web Development is my favourite module
 ?>
 ```

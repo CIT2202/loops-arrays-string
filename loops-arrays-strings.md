@@ -29,7 +29,7 @@ This will output the numbers 1,2,3,4,5,6,7,8,9,10
 
 ## Arrays
 * Arrays in PHP can store any type of data
-* Arrays are  dynamic, we can and remove elements as we wish.
+* Arrays are  dynamic, we can add and remove elements as we wish.
 
 ### Creating arrays
 We can create arrays by using the array keyword:

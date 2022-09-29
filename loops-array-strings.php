@@ -22,11 +22,12 @@ for($i=5;$i<=10;$i++)
 
 // Q2) Arrays
 // a) Output the entire contents of the $countries array using a var_dump() or print_r() statement
-// b) Using this array, write a single echo statement that outputs 'China, India, Indonesia and Pakistan are all in Asia'
-// c) Output the entire contents of the array as an HTML list using a foreach loop
-// d) Uncomment the line that declares the $moreCountries array. Join the two arrays together  Do some research using php.net
+// b) Using this array, write a single echo statement that outputs 'USA is in North America'
+// c) Using this array, write a single echo statement that outputs 'China, India, Indonesia and Pakistan are all in Asia'
+// d) Output the entire contents of the array as an HTML list using a foreach loop
+// e) Uncomment the line that declares the $moreCountries array. Join the two arrays together  Do some research using php.net
 // http://php.net/manual/en/function.array-merge.php. Output the joined array using a var_dump() or print_r() statement.
-// e) Sort this larger list of countries into reverse alphabetical order (do some research into sorting functions) and output the result using a foreach loop.
+// f) Sort this larger list of countries into reverse alphabetical order (do some research into sorting functions) and output the result using a foreach loop.
 
 
 

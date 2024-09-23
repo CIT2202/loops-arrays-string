@@ -299,10 +299,10 @@ This example use the *str_replace()* function to search through a string and the
 
 ```php
 <?php
-$modStr = "CIT2202 Web Development";
-$msg = "CII2345 DISP is my favourite module";
-echo "<p>{$msg}</p>"; //CII2345 DISP is my favourite module
-$msg = str_replace("CII2345 DISP",$modStr,$msg);
-echo "<p>{$msg}</p>"; //CIT2202 Web Development is my favourite module
+$modStr = "CIT2202";
+$msg = "CII2345 is my favourite module";
+echo "<p>{$msg}</p>"; //CII2345 is my favourite module
+$msg = str_replace("CII2345",$modStr,$msg);
+echo "<p>{$msg}</p>"; //CIT2202 is my favourite module
 ?>
 ```

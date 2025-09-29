@@ -5,7 +5,7 @@
 - Open your existing codespace (you shouldn't create a new one) https://github.com/codespaces.
 - In the terminal enter
 ```
-git clone [https://github.com/CIT2202/loops-arrays-string](https://github.com/CIT2202/loops-arrays-string/)
+git clone https://github.com/CIT2202/loops-arrays-string/
 ```
 
 This will copy the contents of this repository into your codespace.

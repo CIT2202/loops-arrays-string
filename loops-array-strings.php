@@ -61,6 +61,12 @@ $films=[
 
 $moduleStr="CIT2202 Web Development";
 
+// Q5) Arrays and Strings
+// a) Loop over the following array of filenames to display each filename on it's own line.
+// b) Modify the loop so that you also print out the file extension e.g. png, pdf etc. You will need to find the position of the '.' symbol and then take a substring from this point to the end of the string.
+// c) Finally, can you test each filename and print out whether or not the file is an image file i.e. a png, a jpg or jpeg. 
+
+$filenames = ["report.docx","logo.png","cat.jpeg","plan.pdf","btn.jpg"];
 ?>
 
 </body>

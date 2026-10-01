@@ -32,13 +32,7 @@ This will output the numbers 1,2,3,4,5,6,7,8,9,10
 * Arrays are  dynamic, we can add and remove elements as we wish.
 
 ### Creating arrays
-We can create arrays by using the array keyword:
-```php
-<?php
-$nameOfArray = array('value1','value2','value3','value4');
-?>
-```
-Since PHP 5.4, arrays can also be created simply by using square brackets:
+We can create arrays by using square brackets:
 ```php
 <?php
 $nameOfArray = ['value1','value2','value3','value4'];
@@ -48,8 +42,8 @@ $nameOfArray = ['value1','value2','value3','value4'];
 Here are some specific examples:
 ```php
 <?php
-$shopping = array("tea", "bread", "milk", "sugar");
-$testScores = array(34, 32, 21, 8, 56, 45);
+$shopping = ["tea", "bread", "milk", "sugar"];
+$testScores = [34, 32, 21, 8, 56, 45];
 $countries = ['England', 'Scotland', 'Wales', 'N.Ireland'];
 ?>
 ```
@@ -59,7 +53,7 @@ Often we want to know the contents of an array but we can't just echo an array e
 
 ```php
 <?php
-$testScores = array(34, 32, 21, 8, 56, 45); //
+$testScores = [34, 32, 21, 8, 56, 45]; //
 echo $testScores; //Error - Notice: Array to string conversion
 ?>
 ```
